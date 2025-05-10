@@ -21,7 +21,7 @@ export class CounterComponent {
   }
 
   increment(): void {
-    this.store.dispatch(increment());
+    this.store.dispatch(increment({ add: 10 }));
   }
 
   decrement(): void {
